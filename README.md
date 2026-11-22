@@ -2,6 +2,33 @@
 
 词屿是 Danbooru 中英文标签图鉴和提示词工作台。支持分类与作品筛选、搜索联想、收藏、标签复制和 NovelAI／Stable Diffusion 数字加权。工作区保存在浏览器本地。
 
+[在线打开词屿](https://tag.idlecloud.cc/)
+
+## 浏览模式
+
+查找标签、浏览分类与作品，查看词条的中英文名、引用量和主题。点击词条打开详情，星标和复制按钮分别保存标签、复制英文键。
+
+![词屿浏览模式的表格视图，左栏选中了作品原神](docs/screenshots/browse.png)
+
+**演示** 选择右上角「浏览」，展开左栏「作品 / IP」，搜索并选中「原神」。在顶部搜索框输入「甘雨」，从联想中识别 `ganyu_(genshin_impact)`，打开详情或将标签加入收藏。[打开原神筛选示例](https://tag.idlecloud.cc/?topic=franchise%2Fgenshin_impact&scope=current)
+
+## 选择模式
+
+将标签加入提示词编辑器。标签可拖动排序，也可调节数值权重。选好 NovelAI 或 Stable Diffusion 格式后，可复制完整提示词或收藏为笔记。
+
+![词屿选择模式已加入三条风景标签，提示词区显示调权和 NovelAI 输出](docs/screenshots/select.png)
+
+**演示**
+
+1. 选择右上角「选择」，依次搜索并点击 `forest`、`sunlight`、`mountain`。
+2. 将 `forest` 的权重调至 `1.2`，在提示词输出区点击「复制」。
+3. 将加权格式切到 Stable Diffusion，即可查看另一种语法。
+
+| 格式 | 示例输出 |
+| --- | --- |
+| NovelAI | `1.2::forest::, sunlight, mountain` |
+| Stable Diffusion | `(forest:1.2), sunlight, mountain` |
+
 ## 运行与部署
 
 需要 Node.js 20.9+ 和 npm。在项目根目录运行：

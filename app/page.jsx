@@ -945,7 +945,7 @@ export default function Atlas() {
               <button className="secondary-button" onClick={() => setPanel(null)}>返回词库</button>
             </div>
             <section className="settings-card about-links" aria-label="项目链接">
-              <a href="https://github.com/YILING0013/danbooru-tag-atlas" target="_blank" rel="noreferrer">GitHub 源码仓库</a>
+              <a href="https://github.com/YILING0013/ciyu" target="_blank" rel="noreferrer">GitHub 源码仓库</a>
               <a href="https://yihan.art/" target="_blank" rel="noreferrer">绘画网站 · yihan.art</a>
             </section>
           </main>
